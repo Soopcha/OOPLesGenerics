@@ -1,6 +1,10 @@
 package collectionLearn;
 
+//import org.apache.commons.lang3.time.StopWatch;
+
+
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 //Java Collections
@@ -8,7 +12,33 @@ public class Coll {
     public static void main(String[] args) {
         List<Integer> ints = new ArrayList<>(1000);
         // это оптимизирует, когда мы сразу знаем кол-во эл
+
+    testCreate();
+
+
+
     }
+
+    public static void testList(List<Integer> list, int size){
+        for (int i = 0; i <size;i++){
+            list.add(0);
+        }
+    }
+
+    public static void testCreate(){
+        //StopWatch stopWatch1 = new StopWatch();
+        //не пашет чет
+
+        testList(new ArrayList<>(),100);
+
+
+        testList(new LinkedList<>(),100);//проигрывает даже при создании
+        //при чтении ArrayList тоже полезнее
+        //а  LinkedList нужен для еего методов offer pop push типо очереди стека дека
+
+    }
+
+
 }
 /*
 Типы коллекций:
@@ -70,4 +100,14 @@ LinkedList<E> implements Deque<E>
 ● boolean offer(E e) //queue
 ● E poll() //queue    //получает из начала
 ● E peek()          // получает 1 эл из коллекции не удаляя его
+
+ArrayList- массив (удобен для 1 кратного создания или мало кратного просто)
+
+  LinkedList - набор связных узлов (ссылка на след и пред)
+  (неудобен для получения эл)
+
+
+
+
+
  */
