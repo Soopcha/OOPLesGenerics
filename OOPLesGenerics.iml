@@ -7,5 +7,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="danidemi.jlubricant.apache.commons.collections" level="project" />
+    <orderEntry type="library" name="google.common.html.types.proto" level="project" />
+    <orderEntry type="library" name="google.collections" level="project" />
+    <orderEntry type="library" name="google.code.collections.collect" level="project" />
+    <orderEntry type="library" name="google.guava.failureaccess" level="project" />
+    <orderEntry type="library" name="google.guava" level="project" />
+    <orderEntry type="library" name="google.guava1" level="project" />
+    <orderEntry type="library" name="google.guava.collections" level="project" />
   </component>
 </module>
